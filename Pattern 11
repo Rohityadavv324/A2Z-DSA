@@ -1,0 +1,19 @@
+
+class Main {
+    public static void main(String[] args) {
+        int toggle=0;
+        for(int i=1;i<=5;i++){
+            if(i%2==0){
+                toggle=0;
+            }
+            else toggle=1;
+            for(int j=0;j<i;j++){
+                System.out.print(toggle);
+                if(toggle==1){
+                    toggle=0;
+                }
+                else toggle=1;
+            }
+            System.out.println();
+        }
+    }
