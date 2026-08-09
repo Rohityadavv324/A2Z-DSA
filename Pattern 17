@@ -1,0 +1,29 @@
+// 3 2 1 0
+// 4 4 4 4
+class Main{
+    public static void main(String[] args){
+        int n=4;
+        int k=n;
+        
+        for(int i=1;i<=n;i++){
+            char A = 65;
+            k--;
+            for(int j=1;j<=k;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print(A);
+                A++;
+            }
+            A--;
+            for(int j=1;j<i;j++){
+                A--;
+                System.out.print(A);
+            }
+            System.out.println();
+        }
+        
+        
+        
+    }
+}
